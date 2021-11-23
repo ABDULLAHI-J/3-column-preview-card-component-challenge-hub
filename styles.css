@@ -1,0 +1,132 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.even-columns{
+    display: flex;
+    max-width: 800px;
+}
+
+.even-columns > * {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 15px;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+    height: 350px;
+}
+
+.card2{
+    background-color: hsl(184, 100%, 22%);
+    height: 350px;
+}
+
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    height: 350px;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif cursive;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: white;
+}
+
+
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+button a{
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.btn-link-sedans{
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-link-suvs{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-link-luxury{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-link-sedans:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.btn-link-sedans a:hover{
+    color:  hsl(179, 100%, 13%);
+}
+
+/* btn link suvs*/
+.btn-link-suvs:hover{
+    background-color:hsl(184, 100%, 22%);
+    color: white;
+}
+.btn-link-suvs > a{
+    color: hsl(184, 100%, 22%);
+}
+
+/* button luxury  */
+.btn-link-luxury:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+
+.btn-link-luxury a:hover{
+    color: white;
+}
+
+@media(max-width: 475px) {
+    body{
+        margin: 0 auto;
+        overflow: auto;
+        margin-top: 25px;
+    }
+    .even-columns{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .even-columns > *{
+       display: flexbox;
+       flex-direction: column;
+       justify-content: center;
+    }
+}
